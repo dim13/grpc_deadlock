@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package main;
+
+service Service {
+	rpc Method (Request) returns (Response);
+}
+
+message Request {
+	bytes Payload = 1;
+}
+
+message Response {
+	// empty
+}
